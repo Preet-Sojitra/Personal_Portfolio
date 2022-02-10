@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="ppl37KgZzhr45igPwxQQ3TlZre3mPbdAT8lFRZBDMCE" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -26,7 +25,7 @@
         <img src="images/logo.png" alt="" class="logo" />
       </div>
         <nav>
-          <ul>
+          <ul class="navUl">
             <li class="nav-list"><a href="#scroll-about-me">About Me</a></li>
             <li class="nav-list"><a href="#scroll-project">Projects</a></li>
             <li class="nav-list"><a href="#scroll-contact">Contact</a></li>
@@ -77,9 +76,12 @@
           <p>
             Hello. My name is Preet Sojitra. I am a frontend developer.
             <br>
-            <b><u>Stack:</b></u> &nbsp;  HTML, CSS and JavaScript
+            <!-- <b><u>Stack:</b></u> &nbsp;  HTML, VanillaCSS, TailwindCSS and JavaScript
             <br>
-            <b><u>Hobbies:</b></u> &nbsp; Exploring different things, reading space books and playing chess.
+            <b><u>Hobbies:</b></u> &nbsp; Exploring different things, reading space books and playing chess. -->
+            <span class="stackHobbies"> Stack: </span>&nbsp;  HTML, VanillaCSS, TailwindCSS and JavaScript
+            <br>
+            <span class="stackHobbies"> Hobbies:</span> &nbsp; Exploring different things, reading space books and playing chess.
           </p>
         </div>
 
@@ -103,14 +105,13 @@
           <!-- Project-1 -->
           <h3 class="project-sub-heading">Food Delivery</h3>
           <p class="project-text">
-            This is first my project in which I have made food-delivery website. I enjoyed making this
-            project.
+            This is my first project in which I have made food-delivery website.
           </p>
           <hr class="project-underline" />
 
           <div class="project-link">
-            <a href="https://preet-sojitra.github.io/Food-Delivery/" target="_blank">View Here</a>
-            <a href="https://github.com/Preet-Sojitra/Food-Delivery" target="_blank">View Code</a>
+            <a class="viewLink" href="https://preet-sojitra.github.io/Food-Delivery/" target="_blank">View Here</a>
+            <a class="viewLink" href="https://github.com/Preet-Sojitra/Food-Delivery" target="_blank">View Code</a>
           </div>
         </div>
 
@@ -121,13 +122,12 @@
           </div>
           <h3 class="project-sub-heading">SVG Portfolio</h3>
           <p class="project-text">
-            This is my first project with an SVG in which I have made dummy Portfolio. I enjoyed making this
-            project.
+            This is my first project with an SVG in which I have made dummy Portfolio. 
           </p>
           <hr class="project-underline" />
           <div class="project-link">
-            <a href="https://preet-sojitra.github.io/SVG-Portfolio/" target="_blank">View Here</a>
-            <a href="https://github.com/Preet-Sojitra/SVG-Portfolio" target="_blank">View Code</a>
+            <a class="viewLink" href="https://preet-sojitra.github.io/SVG-Portfolio/" target="_blank">View Here</a>
+            <a class="viewLink" href="https://github.com/Preet-Sojitra/SVG-Portfolio" target="_blank">View Code</a>
           </div>
         </div>
 
@@ -138,13 +138,12 @@
           </div>
           <h3 class="project-sub-heading">Cloud Hosting Website</h3>
           <p class="project-text">
-            This is my project in which I have made cloud hosting website. I enjoyed making this
-            project.
+            This is my project in which I have made cloud hosting website.
           </p>
           <hr class="project-underline" />
           <div class="project-link">
-            <a href="https://preet-sojitra.github.io/Loruki-Website/" target="_blank">View Here</a>
-            <a href="https://github.com/Preet-Sojitra/Loruki-Website" target="_blank">View Code</a>
+            <a class="viewLink" href="https://preet-sojitra.github.io/Loruki-Website/" target="_blank">View Here</a>
+            <a class="viewLink" href="https://github.com/Preet-Sojitra/Loruki-Website" target="_blank">View Code</a>
           </div>
         </div>
 
@@ -155,13 +154,12 @@
           </div>
           <h3 class="project-sub-heading">Review Card</h3>
           <p class="project-text">
-            This is my fourth project in which I have made a review card. I enjoyed making this
-            project.
+            This is my fourth project in which I have made a review card.
           </p>
           <hr class="project-underline" />
           <div class="project-link">
-            <a href="https://preet-sojitra.github.io/Review-Card/" target="_blank">View Here</a>
-            <a href="https://github.com/Preet-Sojitra/Review-Card" target="_blank">View Code</a>
+            <a class="viewLink" href="https://preet-sojitra.github.io/Review-Card/" target="_blank">View Here</a>
+            <a class="viewLink" href="https://github.com/Preet-Sojitra/Review-Card" target="_blank">View Code</a>
           </div>
         </div>
       </div>
@@ -169,7 +167,7 @@
 
 
                 <!-- Contact Me -->
-  <section class="contact-me" id="scroll-contact">
+    <section class="contact-me" id="scroll-contact">
 
       <div class="contact-me-heading">
         <h1 class="contact-me-primary-heading">Contact Me</h1>
@@ -229,6 +227,11 @@
       <div class="footer-social">
         <a href="https://www.linkedin.com/in/preet-sojitra/" target="_blank">Linkedin</a>
   </div>
+      </div>
+
+      <div class="ribbon">
+        Made with <span class="heart">&#9829;</span> by 
+        <a href="https://github.com/Preet-Sojitra" target="_blank"> Preet Sojitra </a>
       </div>
     </footer>
   </body>
