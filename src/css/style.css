@@ -11,7 +11,6 @@ html {
   --background-clr: #000;
   --primary-clr: #f4b4f6;
   --secondary-clr: #7684ff;
-  --accent-clr: #d44445;
   --font-clr: rgba(234, 234, 234, 0.8);
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Anton", sans-serif;
@@ -32,7 +31,7 @@ body {
 }
 
 .particle {
-  background-color: rgb(131, 241, 87);
+  background-color: #a554c3;
   position: absolute;
 }
 
@@ -90,7 +89,7 @@ a {
 
 .nav-list > a::after {
   content: "";
-  background-color: var(--accent-clr);
+  background-color: var(--primary-clr);
   width: 100%;
   height: 0.1rem;
   position: absolute;
@@ -197,9 +196,9 @@ a {
 .linkdin:hover {
   color: #0e76a8;
 }
-.discord:hover {
+/* .discord:hover {
   color: #7289da;
-}
+} */
 
 /* Scroll Down arrow */
 .scrollToBtn {
@@ -397,6 +396,10 @@ div .img-me {
   justify-content: center;
   row-gap: 30px;
 }
+.skills-container > :nth-child(7) img,
+.skills-container > :nth-child(8) img {
+  width: 63px;
+}
 .skill {
   display: flex;
   flex-direction: column;
@@ -449,7 +452,7 @@ div .img-me {
 }
 .card {
   background: var(--background-clr);
-  box-shadow: rgba(244, 180, 246, 0.2) 0px 0px 30px;
+  box-shadow: rgba(244, 180, 246, 0.2) 0px 0px 15px;
   border-radius: 10px;
   transition: transform 400ms;
   margin: 50px 25px;
@@ -475,6 +478,7 @@ div .img-me {
   margin-top: 18px;
   font-family: var(--primary-font);
   font-weight: 500;
+  font-size: 23px;
   color: rgba(190, 190, 190, 0.8);
 }
 .project-text {
@@ -498,13 +502,13 @@ div .img-me {
   margin-right: 10px;
 }
 .viewLink {
-  color: var(--accent-clr);
+  color: var(--primary-clr);
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 .viewLink:hover {
-  color: #b53737;
+  color: rgba(190, 190, 190, 0.8);
 }
 
 /* Talk to me */
@@ -525,7 +529,7 @@ div .img-me {
 }
 .email::after {
   content: "";
-  background-color: var(--accent-clr);
+  background-color: var(--primary-clr);
   width: 100%;
   height: 0.1rem;
   position: absolute;
@@ -1042,6 +1046,16 @@ div .img-me {
   .education-img img {
     width: 300px;
     height: 300px;
+  }
+}
+
+/* Media queries for height */
+@media (max-height: 660px) {
+  .seperator-container {
+    display: none;
+  }
+  .scrollTo > i {
+    display: none;
   }
 }
 
